@@ -44,4 +44,10 @@ function Num(x){
 
 ```
 
+## Caveats
+
+* Do not define functions with `var` statements. 
+
+## Built by [Machi](http://instagram.com/p/YcU60_kD0r/)
+
 ![](https://dl.dropboxusercontent.com/s/swyw3663x22pnwy/npmel_15.jpg)
