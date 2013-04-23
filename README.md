@@ -12,7 +12,7 @@ $ npm install new-chain
 
 ```js
 
-Num(3).sum(10).sub(5).mul(2)
+Num(3).sum(10).sub(5).mul(2).val()
 // => 16
 
 function Num(x){
