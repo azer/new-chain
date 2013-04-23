@@ -11,25 +11,37 @@ $ npm install new-chain
 ## Usage
 
 ```js
-x = 0
-val = newChain(mul, sum, sub)
 
-val.sum(8).sub(2).mul(3)
+Num(3).sum(10).sub(5).mul(2)
+// => 16
 
-x
-// => 18
+function Num(x){
 
-function mul(n){
-    x *= n
+    var chain = newChain(sum, sub, mul)
+
+    chain.val = val
+
+    return chain
+
+    function mul(n){
+        x *= n
+    }
+    
+    function sum(n){
+        x += n
+    }
+    
+    function sub(n){
+        x -= n
+    }
+    
+    function val(n){
+        return x
+    }
+
 }
 
-function sum(n){
-    x += n
-}
 
-function sub(n){
-    x -= n
-}
 ```
 
 ![](https://dl.dropboxusercontent.com/s/swyw3663x22pnwy/npmel_15.jpg)
