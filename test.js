@@ -22,3 +22,35 @@ it('is the example in README', function(){
   }
 
 });
+
+it('accepts objects', function(){
+
+  var x = 0;
+
+  var val = newChain({ alias: foo, foo: foo });
+
+  val.alias().foo().alias();
+
+  expect(x).to.be.equal(3);
+
+  function foo(){
+    x++;
+  }
+
+});
+
+it('allows aliases', function(){
+
+  var x = 0;
+
+  var val = newChain({ alias: foo }, foo);
+
+  val.alias().foo().alias();
+
+  expect(x).to.be.equal(3);
+
+  function foo(){
+    x++;
+  }
+
+});
