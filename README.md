@@ -1,4 +1,4 @@
-## new-chain
+## new-chain [![Build Status](https://travis-ci.org/azer/new-chain.png?branch=master)](https://travis-ci.org/azer/new-chain)
 
 Create chaining APIs from functions
 
